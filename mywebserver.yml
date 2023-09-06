@@ -8,5 +8,5 @@
        state: presents
   - name: in this task, i want to start webserver
     service:
-           name: apache2
-           state: started
+       name: apache2
+       state: started
