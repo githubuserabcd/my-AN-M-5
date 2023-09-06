@@ -1,11 +1,12 @@
 ---
 - hosts: all
   become: yes
+  gather_facts: yes
   tasks:  
   - name : in this task , i want to install apache2 webserver
     apt:
        name: apache2
-       state: presents
+       state: present
   - name: in this task, i want to start webserver
     service:
        name: apache2
